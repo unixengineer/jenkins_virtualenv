@@ -1,3 +1,3 @@
-#awscli==1.11.136
-awscli
+awscli==1.11.136
+#awscli
 
