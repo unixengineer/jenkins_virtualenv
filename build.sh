@@ -10,4 +10,8 @@ fi
 
 pip install -r requirements.txt --download-cache=/tmp/${JOB_NAME} --upgrade
 
+## Lets now check what version shows up
+aws --version
+
+
 
