@@ -7,7 +7,7 @@ if [ ! -d "venv" ]; then
 fi
 
 # if you want a fresh build everytime, delete and create a new virtualenv
-# rmvirtualenv venv
+rmvirtualenv venv
 
 # Activate this virtualenv
 . venv/bin/activate
