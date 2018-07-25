@@ -7,7 +7,7 @@ node {
     }
     stage('Build')
     {
-      pip --version
+      sh 'pip --version'
     }
   }
 }
