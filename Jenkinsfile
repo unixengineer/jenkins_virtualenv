@@ -5,8 +5,8 @@ node {
     }
     stage('Build') {
       // Run the maven build
-      steps {
-        sh 'pip --version'
+      shell {
+        pip --version
       }
     }
   }
