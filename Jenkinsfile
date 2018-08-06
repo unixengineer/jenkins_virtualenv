@@ -15,20 +15,18 @@ tty: true
 """
 ) 
 {
-pipeline{
   node (label) {
     container('ubuntu') {
-        stages {
-          stage ('Build') {
-            steps {
-                hostname
-                sudo apt-get install python-setuptools python-dev build-essential
-                sudo easy_install pip
-                sudo pip install --upgrade virtualenv
-            }
+      stages {
+        stage ('Build') {
+          steps {
+            hostname
+              sudo apt-get install python-setuptools python-dev build-essential
+              sudo easy_install pip
+              sudo pip install --upgrade virtualenv
           }
         }
+      }
     }
   }
-}
 }
