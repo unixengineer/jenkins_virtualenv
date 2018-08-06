@@ -15,9 +15,9 @@ tty: true
 """
 ) 
 {
+pipeline{
   node (label) {
     container('ubuntu') {
-      pipeline {
         stages {
           stage ('Build') {
             steps {
@@ -28,7 +28,7 @@ tty: true
             }
           }
         }
-      }
     }
   }
+}
 }
